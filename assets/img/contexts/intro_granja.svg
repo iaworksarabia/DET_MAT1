@@ -1,0 +1,37 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <linearGradient id="skyUpgrade" x1="0%" y1="0%" x2="0%" y2="100%">
+   <stop offset="0%" style="stop-color:#87CEEB;stop-opacity:1" />
+   <stop offset="100%" style="stop-color:#E0F7FA;stop-opacity:1" />
+  </linearGradient>
+  <radialGradient id="sunGlow" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+   <stop offset="0%" style="stop-color:#FFF;stop-opacity:1" />
+   <stop offset="100%" style="stop-color:#FFD700;stop-opacity:0" />
+  </radialGradient>
+ </defs>
+ <!-- Sky -->
+ <rect width="800" height="600" fill="url(#skyUpgrade)"/>
+ <!-- Sun -->
+ <circle cx="700" cy="80" r="60" fill="#FFD700" />
+ <circle cx="700" cy="80" r="80" fill="url(#sunGlow)" opacity="0.5"/>
+ <!-- Hills -->
+ <path d="M0 450 Q 200 400 400 450 T 800 450 V 600 H 0 Z" fill="#4CAF50" />
+ <path d="M0 500 Q 300 450 600 500 T 1000 500 V 600 H 0 Z" fill="#388E3C" />
+ <!-- Barn -->
+ <path d="M250 500 V 300 L 400 180 L 550 300 V 500 Z" fill="#D32F2F" stroke="#B71C1C" stroke-width="4"/>
+ <rect x="350" y="350" width="100" height="150" fill="#FFF" stroke="#B71C1C" stroke-width="2"/>
+ <path d="M350 350 L 450 500 M 450 350 L 350 500" stroke="#B71C1C" stroke-width="2"/>
+ <rect x="280" y="320" width="40" height="40" fill="#FFF" stroke="#B71C1C" stroke-width="2"/>
+ <path d="M280 340 H 320 M 300 320 V 360" stroke="#B71C1C" stroke-width="2"/>
+ <rect x="480" y="320" width="40" height="40" fill="#FFF" stroke="#B71C1C" stroke-width="2"/>
+ <path d="M480 340 H 520 M 500 320 V 360" stroke="#B71C1C" stroke-width="2"/>
+ <!-- Tractor -->
+ <path d="M600 480 H 700 V 400 H 660 V 380 H 620 V 400 H 600 Z" fill="#2E7D32" /> <!-- Body -->
+ <circle cx="630" cy="480" r="30" fill="#333" stroke="#EEE" stroke-width="5"/> <!-- Big Wheel -->
+ <circle cx="690" cy="480" r="20" fill="#333" stroke="#EEE" stroke-width="4"/> <!-- Small Wheel -->
+ <!-- Animals -->
+ <circle cx="150" cy="480" r="30" fill="#FFF" stroke="#000" stroke-width="2"/> <!-- Sheep -->
+ <circle cx="140" cy="470" r="10" fill="#FFF" stroke="#000" stroke-width="1"/>
+ <circle cx="160" cy="475" r="10" fill="#FFF" stroke="#000" stroke-width="1"/>
+ <circle cx="150" cy="460" r="15" fill="#FFCCBC" /> <!-- Face -->
+</svg>

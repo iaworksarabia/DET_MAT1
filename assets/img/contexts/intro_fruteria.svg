@@ -1,0 +1,62 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <linearGradient id="marketBg" x1="0%" y1="0%" x2="0%" y2="100%">
+   <stop offset="0%" style="stop-color:#FFF3E0;stop-opacity:1" />
+   <stop offset="100%" style="stop-color:#FFCC80;stop-opacity:1" />
+  </linearGradient>
+  <radialGradient id="appleGrad" cx="30%" cy="30%" r="70%">
+   <stop offset="0%" style="stop-color:#FF8A80;stop-opacity:1" />
+   <stop offset="100%" style="stop-color:#D32F2F;stop-opacity:1" />
+  </radialGradient>
+  <radialGradient id="orangeGrad" cx="30%" cy="30%" r="70%">
+   <stop offset="0%" style="stop-color:#FFCC80;stop-opacity:1" />
+   <stop offset="100%" style="stop-color:#EF6C00;stop-opacity:1" />
+  </radialGradient>
+ </defs>
+ <!-- Background -->
+ <rect width="800" height="600" fill="url(#marketBg)"/>
+ 
+ <!-- Window/Awning -->
+ <path d="M100 0 h 600 v 150 h -600 z" fill="#FFF" opacity="0.5"/>
+ <path d="M100 150 l 40 40 l 40 -40 l 40 40 l 40 -40 l 40 40 l 40 -40 l 40 40 l 40 -40 l 40 40 l 40 -40 l 40 40 l 40 -40 l 40 40 l 40 -40 l 40 40" stroke="#FF5722" stroke-width="3" fill="none"/>
+ <path d="M100 0 h 600 v 150 h -600 z" fill="url(#marketBg)" opacity="0.1"/>
+
+ <!-- Shelves -->
+ <rect x="150" y="200" width="500" height="300" fill="#8D6E63" rx="10"/>
+ <rect x="170" y="220" width="460" height="20" fill="#6D4C41"/>
+ <rect x="170" y="350" width="460" height="20" fill="#6D4C41"/>
+ <rect x="170" y="480" width="460" height="20" fill="#6D4C41"/>
+
+ <!-- Crates -->
+ <!-- Crate 1: Apples -->
+ <rect x="180" y="250" width="100" height="60" fill="#D7CCC8" rx="5" stroke="#8D6E63" stroke-width="2"/>
+ <circle cx="200" cy="240" r="15" fill="url(#appleGrad)"/>
+ <circle cx="230" cy="240" r="15" fill="url(#appleGrad)"/>
+ <circle cx="260" cy="240" r="15" fill="url(#appleGrad)"/>
+ <circle cx="215" cy="225" r="15" fill="url(#appleGrad)"/>
+ <circle cx="245" cy="225" r="15" fill="url(#appleGrad)"/>
+
+ <!-- Crate 2: Oranges -->
+ <rect x="300" y="250" width="100" height="60" fill="#D7CCC8" rx="5" stroke="#8D6E63" stroke-width="2"/>
+ <circle cx="320" cy="240" r="16" fill="url(#orangeGrad)"/>
+ <circle cx="350" cy="240" r="16" fill="url(#orangeGrad)"/>
+ <circle cx="380" cy="240" r="16" fill="url(#orangeGrad)"/>
+ <circle cx="335" cy="225" r="16" fill="url(#orangeGrad)"/>
+ <circle cx="365" cy="225" r="16" fill="url(#orangeGrad)"/>
+
+ <!-- Crate 3: Bananas (Abstract) -->
+ <rect x="420" y="250" width="100" height="60" fill="#D7CCC8" rx="5" stroke="#8D6E63" stroke-width="2"/>
+ <path d="M430 240 q 15 -10 30 0 t 30 0" stroke="#FFEB3B" stroke-width="8" fill="none" stroke-linecap="round"/>
+ <path d="M440 230 q 15 -10 30 0 t 30 0" stroke="#FFEB3B" stroke-width="8" fill="none" stroke-linecap="round"/>
+ 
+ <!-- Character Hint (Hand with apple) -->
+ <path d="M600 400 q 20 -10 40 0" stroke="#FFCC80" stroke-width="20" stroke-linecap="round" fill="none" opacity="0.8"/>
+ <circle cx="640" cy="390" r="20" fill="url(#appleGrad)"/>
+
+ <!-- Price Tags -->
+ <rect x="200" y="300" width="40" height="20" fill="#FFF" stroke="#333"/>
+ <text x="220" y="315" text-anchor="middle" font-size="12" font-family="Arial">🍎</text>
+ <rect x="320" y="300" width="40" height="20" fill="#FFF" stroke="#333"/>
+ <text x="340" y="315" text-anchor="middle" font-size="12" font-family="Arial">🍊</text>
+
+</svg>
