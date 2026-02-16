@@ -1,0 +1,3 @@
+@echo off
+echo Iniciando Detectives Matematicos (Modo DEMO)...
+start "" "index.html"
