@@ -1,0 +1,265 @@
+/* 
+   ========================================
+   LUXURY RESPONSIVE DESIGN - DETECTIVES MATEMÁTICOS
+   Targeting Tablets & Mobile with Premium Aesthetics
+   ========================================
+*/
+
+/* 1. Global Scaling & Layout */
+@media (max-width: 1024px) {
+    :root {
+        --font-size-4xl: 2.8rem;
+        --font-size-3xl: 2.2rem;
+        --font-size-2xl: 1.8rem;
+        --spacing-xxl: 3rem;
+        --spacing-xl: 2rem;
+    }
+
+    .container {
+        padding: var(--spacing-md);
+        max-width: 100% !important;
+    }
+}
+
+/* 2. Wizard Navigation (The most fragile part on mobile) */
+@media (max-width: 900px) {
+    .wizard-steps-indicator {
+        display: grid !important;
+        grid-template-columns: repeat(3, 1fr) !important;
+        /* 3x2 grid */
+        gap: 12px !important;
+        padding: 15px !important;
+        background: rgba(255, 255, 255, 0.95) !important;
+        border-radius: 20px !important;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1) !important;
+        border: 2px solid #E2E8F0 !important;
+        margin-bottom: 1.5rem !important;
+    }
+
+    .step-indicator {
+        flex-direction: column !important;
+        padding: 8px 4px !important;
+        border-radius: 12px !important;
+        margin: 0 !important;
+        min-height: 80px !important;
+        justify-content: center !important;
+        background: #FFFFFF !important;
+        border: 1px solid #E2E8F0 !important;
+    }
+
+    .step-number {
+        width: 32px !important;
+        height: 32px !important;
+        font-size: 1rem !important;
+        margin: 0 0 5px 0 !important;
+        border-width: 3px !important;
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .step-label {
+        font-size: 0.7rem !important;
+        font-weight: 800 !important;
+        text-transform: uppercase !important;
+        white-space: nowrap !important;
+        display: block !important;
+    }
+
+    /* Active step focus on mobile */
+    .step-indicator.active {
+        background: #F0F9FF !important;
+        border-color: var(--color-primary) !important;
+        transform: scale(1.05) !important;
+        z-index: 2;
+    }
+}
+
+/* 3. Problem Statement & Audio Fixes */
+@media (max-width: 600px) {
+    .main-title {
+        font-size: 1.8rem !important;
+        line-height: 1.2 !important;
+        margin-bottom: 0.5rem !important;
+    }
+
+    .title-underline {
+        width: 120px !important;
+        height: 5px !important;
+    }
+
+    .statement-box {
+        padding: 18px !important;
+        font-size: 1.15rem !important;
+        border-radius: 18px !important;
+    }
+
+    #problemTextContainer {
+        max-height: 45vh !important;
+        overflow-y: auto !important;
+        border-bottom: 2px solid #E2E8F0 !important;
+        background: #F8FAFC !important;
+        padding: 10px !important;
+        border-radius: 12px !important;
+    }
+
+    /* Make buttons bigger and easier to tap */
+    .btn {
+        padding: 1.2rem 1.5rem !important;
+        font-size: 1.1rem !important;
+        border-radius: 20px !important;
+    }
+
+    .btn-audio-inline {
+        width: 44px !important;
+        height: 44px !important;
+        font-size: 1.4rem !important;
+    }
+}
+
+/* 4. Choice Cards & Form Elements */
+@media (max-width: 768px) {
+    .option-grid {
+        grid-template-columns: 1fr !important;
+        /* Stack vertical */
+        gap: 15px !important;
+    }
+
+    .option-card {
+        padding: 15px !important;
+        min-height: 80px !important;
+        flex-direction: row !important;
+        text-align: left !important;
+        justify-content: flex-start !important;
+        gap: 15px !important;
+    }
+
+    .option-card h3 {
+        font-size: 1.2rem !important;
+        margin: 0 !important;
+    }
+
+    .context-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 12px !important;
+    }
+
+    .context-card {
+        height: 120px !important;
+    }
+
+    .context-card-title {
+        font-size: 1.1rem !important;
+    }
+}
+
+/* 5. Mini-Games & Modals */
+@media (max-width: 768px) {
+    .island-game-content {
+        width: 96% !important;
+        padding: 1.5rem !important;
+        border-width: 6px !important;
+        max-height: 90vh !important;
+        overflow-y: auto !important;
+    }
+
+    .mini-game-container {
+        height: 350px !important;
+    }
+
+    .win-title {
+        font-size: 2.2rem !important;
+    }
+
+    .island-game-footer {
+        flex-direction: column !important;
+        gap: 15px !important;
+        width: 100% !important;
+    }
+
+    .island-game-footer .btn {
+        width: 100% !important;
+        margin: 0 !important;
+    }
+}
+
+/* 6. Global Navigation Adjustments */
+@media (max-width: 600px) {
+    .global-nav {
+        padding: 0.5rem 1rem !important;
+        height: 55px !important;
+    }
+
+    .btn-home,
+    .btn-back-global,
+    .btn-exit-global {
+        padding: 0.5rem 1rem !important;
+        font-size: 0.8rem !important;
+        border-radius: 12px !important;
+    }
+
+    .screen {
+        padding-top: 60px !important;
+    }
+
+    /* Fix for bottom fixed elements like "WorkBoard" */
+    .btn-float {
+        width: 60px !important;
+        height: 60px !important;
+        font-size: 1.8rem !important;
+        bottom: 15px !important;
+        left: 15px !important;
+    }
+}
+
+/* 7. Specific Screen Fixes */
+@media (max-width: 500px) {
+    #splashScreen .main-title {
+        font-size: 2.2rem !important;
+    }
+
+    .welcome-message {
+        padding: 1.2rem !important;
+        margin: 1rem auto !important;
+    }
+
+    .welcome-text {
+        font-size: 1.05rem !important;
+    }
+
+    .main-nav {
+        gap: 12px !important;
+    }
+}
+
+/* 8. Table/Cálculo Fixes (Step 5) */
+@media (max-width: 768px) {
+    .calc-table {
+        font-size: 1.2rem !important;
+        width: 100% !important;
+    }
+
+    .calc-input {
+        width: 55px !important;
+        height: 55px !important;
+        font-size: 1.5rem !important;
+    }
+
+    .methods-grid {
+        grid-template-columns: 1fr !important;
+    }
+}
+
+/* 9. Success/Confetti Modals */
+.swal2-popup {
+    width: 90% !important;
+    max-width: 450px !important;
+    padding: 1.5rem !important;
+    border-radius: 24px !important;
+}
+
+@media (max-width: 480px) {
+    .swal2-title {
+        font-size: 1.5rem !important;
+    }
+}
